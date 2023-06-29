@@ -92,4 +92,16 @@ checkerror(prompt("enter a number"));
 
 // task 9
 
+function mfunction(callback) {
+    console.log("inside main function");
+    setTimeout(function() {
+      callback("om bhatt");
+    }, 1000);
+  }
+   
+  function callbackfunction(a) {
+    console.log("Name: " + a);
+  }
+   
+  mfunction(callbackfunction);
 
