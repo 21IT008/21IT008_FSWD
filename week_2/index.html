@@ -1,0 +1,42 @@
+#include<iostream>
+    using namespace std;
+    int c=0;
+    int comp=0;
+int recursiveLinearSearch(int array[],int key,int size) {
+    c++;
+    c++;
+	size=size-1;
+	c++;
+	if(size <0) {
+            c++;
+		return -1;
+	}
+	comp++;
+	c++;
+	if(array[size]==key) {
+	    c++;
+		return 1;
+	} else {
+	    c++;
+		return recursiveLinearSearch(array,key,size);
+	}
+}
+int main() {
+
+	int array[]={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25}, key,i;
+	cout<<"Enter Key To Search  in Array";
+	cin>>key;
+	int result;
+	c++;
+	int size=25;
+	result=recursiveLinearSearch(array,key,size--);
+	c++;
+	c++;
+	if(result==1) {
+		cout<<"Key Found in Array  ";
+	} else {
+		cout<<"Key NOT Found in Array  ";
+	}
+	cout<<endl<<c<<endl<<comp;
+	return 0;
+}
