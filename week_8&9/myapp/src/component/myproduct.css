@@ -1,0 +1,50 @@
+.product-card {
+    width: 300px;
+    height: auto;
+    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.product-img {
+    padding: 5px;
+    width: 95%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    /* If you want to center the image inside .product-img (in case .product-img is bigger than the image), you can use these properties */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Product title */
+.product-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* Product description */
+.product-description {
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 10px;
+}
+
+/* Product price */
+.product-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.addtocart-btn {
+    font-size: 16px;
+    font-weight: bold;
+    color:  #ffffff;
+    background-color: rgb(140, 127, 171);
+}
+
