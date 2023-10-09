@@ -1,0 +1,2 @@
+const mongoose = require('mongoose')
+mongoose.connect('mongodb+srv://21it008:bClREVSnhzVniv4I@cluster0.guwpnah.mongodb.net/miniproject?retryWrites=true&w=majority').then(()=>console.log('Connected to database')).catch((e)=>console.log(e))
